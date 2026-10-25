@@ -1,0 +1,77 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="text"] {
+    width: 280px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+button {
+    width: 304px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* 新規登録ボタン（目立たせる） */
+#registerBtn {
+    background-color: #2563eb;
+    color: white;
+}
+
+#registerBtn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ログインボタン（サブカラー） */
+#loginBtn {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+#loginBtn:hover {
+    background-color: #cbd5e1;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 300px;
+}
